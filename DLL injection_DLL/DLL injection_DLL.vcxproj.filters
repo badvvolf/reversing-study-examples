@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyDll.cpp">
+    <ClCompile Include="MessageBox_DLL.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

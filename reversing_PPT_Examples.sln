@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Code injection", "reversing
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL injection_DLL", "DLL injection_DLL\DLL injection_DLL.vcxproj", "{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL injection_Injector", "DLL injection_Injector\DLL injection_Injector.vcxproj", "{D9BD20E6-B787-44C0-8553-60186EB2E4D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}.Debug|Win32.Build.0 = Debug|Win32
 		{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}.Release|Win32.ActiveCfg = Release|Win32
 		{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}.Release|Win32.Build.0 = Release|Win32
+		{D9BD20E6-B787-44C0-8553-60186EB2E4D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D9BD20E6-B787-44C0-8553-60186EB2E4D8}.Debug|Win32.Build.0 = Debug|Win32
+		{D9BD20E6-B787-44C0-8553-60186EB2E4D8}.Release|Win32.ActiveCfg = Release|Win32
+		{D9BD20E6-B787-44C0-8553-60186EB2E4D8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
