@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CodeInjection_Inline_Patch.c">
+    <ClCompile Include="MyDll.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

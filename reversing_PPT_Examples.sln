@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "reversing_PPT_Examples", "reversing_PPT_Examples\reversing_PPT_Examples.vcxproj", "{697421C7-DD76-4CD7-8F48-DCDBED329484}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Code injection", "reversing_PPT_Examples\reversing_PPT_Examples.vcxproj", "{697421C7-DD76-4CD7-8F48-DCDBED329484}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL injection_DLL", "DLL injection_DLL\DLL injection_DLL.vcxproj", "{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{697421C7-DD76-4CD7-8F48-DCDBED329484}.Debug|Win32.Build.0 = Debug|Win32
 		{697421C7-DD76-4CD7-8F48-DCDBED329484}.Release|Win32.ActiveCfg = Release|Win32
 		{697421C7-DD76-4CD7-8F48-DCDBED329484}.Release|Win32.Build.0 = Release|Win32
+		{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}.Debug|Win32.Build.0 = Debug|Win32
+		{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}.Release|Win32.ActiveCfg = Release|Win32
+		{E4C07B5A-BA70-4A8F-B1D2-522A77E3F5AB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
