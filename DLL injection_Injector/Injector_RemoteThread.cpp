@@ -3,6 +3,8 @@
 #include<windows.h>
 #include<tchar.h>
 
+//멀티바이트로 설정
+//유니코드 설정시 "" 앞에 L을 붙이고, LoadLibraryW를 써야 한다.
 
 BOOL InjectDll(DWORD dwPID, LPCTSTR szDllPath)
 {
