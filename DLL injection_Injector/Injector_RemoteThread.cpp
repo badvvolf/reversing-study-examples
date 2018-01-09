@@ -16,7 +16,7 @@ BOOL InjectDll(DWORD dwPID, LPCTSTR szDllPath)
 	//대상 프로세스를 통제하기 위해 연다.
 	if (!(hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, dwPID) ) )
 	{
-		_tprintf(L"OpenProcess fail!");
+		_tprintf("OpenProcess fail!");
 		return FALSE;
 	}
 
@@ -27,8 +27,8 @@ BOOL InjectDll(DWORD dwPID, LPCTSTR szDllPath)
 	//대상 프로세스의 메모리에 DLL path를 저장한다. 
 	WriteProcessMemory(hProcess, pRemoteBuf, (LPVOID)szDllPath, dwBufSize, NULL);
 
-	hMod = GetModuleHandle(L"kernel32.dll");
-	pThreadProc = (LPTHREAD_START_ROUTINE)GetProcAddress(hMod, "LoadLibraryW");
+	hMod = GetModuleHandle("kernel32.dll");
+	pThreadProc = (LPTHREAD_START_ROUTINE)GetProcAddress(hMod, "LoadLibraryA");
 
 
 	//원격 쓰레드 실행
@@ -50,14 +50,14 @@ int _tmain(int argc, TCHAR * argv[])
 {
 	if (argc != 3)
 	{
-		_tprintf(L"Usage : %s pid dll_path\n", argv[0]);
+		_tprintf("Usage : %s pid dll_path\n", argv[0]);
 		return 1;
 	}
 
 	if (InjectDll((DWORD)_tstol(argv[1]), argv[2]))
-		_tprintf(L"Injection success!\n");
+		_tprintf("Injection success!\n");
 	else
-		_tprintf(L"Injection fail\n");
+		_tprintf("Injection fail\n");
 
 	return 0;
 

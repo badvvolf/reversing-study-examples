@@ -18,5 +18,8 @@
     <ClCompile Include="MessageBox_DLL.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Registry_injection_DLL.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
