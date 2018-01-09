@@ -35,7 +35,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstance, DWORD fdwReason, LPVOID lpvReserved)
 		//아무것도 안 함
 		//목적 프로그램은 임의로 PEiD.exe로 설정했음
 		if (stricmp(szProcess, "PEiD.exe"))
-			break;
+			 break;
 
 		WriteFile();
 	}
