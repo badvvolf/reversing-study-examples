@@ -14,11 +14,15 @@ BOOL InjectDll(DWORD dwPID, LPCTSTR szDllPath)
 	DWORD dwBufSize = (DWORD)(_tcslen(szDllPath) + 1) * sizeof(TCHAR);
 	LPTHREAD_START_ROUTINE pThreadProc;
 
+	char arr[100];
+	sprintf(arr, "%d", dwPID);
+	OutputDebugStringA(arr);
+
 
 	//대상 프로세스를 통제하기 위해 연다.
 	if (!(hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, dwPID) ) )
 	{
-		_tprintf("OpenProcess fail!");
+		_tprintf("OpenProcess fail!\n");
 		return FALSE;
 	}
 

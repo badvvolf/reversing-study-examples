@@ -17,20 +17,30 @@ int main(int argc, char * argv[])
 		printf("usage %s dllpath", argv[0]);
 	}
 
+
+	//DLL 로딩
 	hDll = LoadLibraryA(argv[1]);
 	
+	//함수 주소 얻기	
 	HookStart = (PFN_HOOKSTART)GetProcAddress(hDll, "HookStart");
 	HookStop = (PFN_HOOKSTART)GetProcAddress(hDll, "HookStop");
 
+	//후킹 시작
 	HookStart(); 
 
+
+	//q가 눌릴 때까지 대기
 	printf("press 'q' to quit\n");
 	while ( getch() != 'q');
 
+
+	//후킹 종료
 	HookStop();
 	FreeLibrary(hDll);
 
 
 
 }
-//C로 할거냐 cpp로 할거냐
+
+
+
