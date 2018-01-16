@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL injection_Injector", "D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL Ejection_Ejector", "DLL Ejection_Ejector\DLL Ejection_Ejector.vcxproj", "{4F68A8C7-D61E-4127-8E92-483D79C36DA1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Code Injection_Injector", "Code Injection_Injector\Code Injection_Injector.vcxproj", "{C762058C-4AD5-4FA3-AA01-60539A9056CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{4F68A8C7-D61E-4127-8E92-483D79C36DA1}.Debug|Win32.Build.0 = Debug|Win32
 		{4F68A8C7-D61E-4127-8E92-483D79C36DA1}.Release|Win32.ActiveCfg = Release|Win32
 		{4F68A8C7-D61E-4127-8E92-483D79C36DA1}.Release|Win32.Build.0 = Release|Win32
+		{C762058C-4AD5-4FA3-AA01-60539A9056CB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C762058C-4AD5-4FA3-AA01-60539A9056CB}.Debug|Win32.Build.0 = Debug|Win32
+		{C762058C-4AD5-4FA3-AA01-60539A9056CB}.Release|Win32.ActiveCfg = Release|Win32
+		{C762058C-4AD5-4FA3-AA01-60539A9056CB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
