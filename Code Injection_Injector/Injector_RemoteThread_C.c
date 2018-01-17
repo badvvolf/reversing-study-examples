@@ -114,8 +114,9 @@ BOOL InjectCode(int dwPID)
 	HANDLE hProcess = NULL;
 	HANDLE hThread = NULL; 
 
-	//대상 프로세스의 데이터 영역에 넣은 데이터의 주소
+	//대상 프로세스의 메모리에 확보한, 끼워넣은 데이터의 주소
 	LPVOID pRemoteBuf[2] = { 0, };
+
 	DWORD dwSize = 0;
 
 
@@ -123,6 +124,7 @@ BOOL InjectCode(int dwPID)
 
 
 	//인젝션 후 사용할 함수 주소 구해 저장
+	//이 두 함수는 system dll에 속하므로, 이 프로그램에서의 주소와 대상 프로그램에서의 주소가 같음
 	param.pFunc[0] = GetProcAddress(hMod, "LoadLibraryA");
 	param.pFunc[1] = GetProcAddress(hMod, "GetProcAddress");
 

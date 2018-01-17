@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Injector_RemoteThread.c">
+    <ClCompile Include="Injector_RemoteThread_C.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Injector_RemoteThread_opcode.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
