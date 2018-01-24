@@ -4,7 +4,10 @@
 HMODULE g_hMod = NULL;
 HANDLE hThread = NULL;
 
-
+extern "C" __declspec(dllexport) void dummy()
+{
+	return;
+}
 void WINAPI my_Function()
 {
 	MessageBoxA(NULL, "hello", "do something weird", 0);
