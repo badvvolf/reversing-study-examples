@@ -16,8 +16,8 @@ BOOL InjectDll(DWORD dwPID, LPCTSTR szDllPath)
 
 
 	//대상 프로세스를 통제하기 위해 연다.
-	if (!(hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, dwPID) ) )
-	{
+	if (!(hProcess = OpenProcess(PROCESS_ALL_ACCESS/*XP일 경우 MAXIMUX_ALLOWED*/, FALSE, dwPID) ) )
+	{ 
 		_tprintf("OpenProcess fail!\n");
 		return FALSE;
 	}
