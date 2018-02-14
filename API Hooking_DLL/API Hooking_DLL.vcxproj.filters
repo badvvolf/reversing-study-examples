@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="API_Hooking_Debugger.c">
+    <ClCompile Include="DLL_IAT_Hooking.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="API_Hooking_Code_Injector.c">
+    <ClCompile Include="DLL_Code_Hooking.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
