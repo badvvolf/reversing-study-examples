@@ -11,7 +11,7 @@ TCHAR g_szProcName[MAX_PATH] = { 0, };
 
 
 #define DEF_NTDLL						("ntdll.dll")
-#define DEF_ZWQUERYSYSTEMINFORMATION	("ZwQuerySystemInformatino")
+#define DEF_ZWQUERYSYSTEMINFORMATION	("ZwQuerySystemInformation")
 #define STATUS_SUCCESS					(0x00000000L)
 
 
@@ -30,7 +30,7 @@ NTSTATUS WINAPI NewZwQuerySystemInformation(SYSTEM_INFORMATION_CLASS, PVOID, ULO
 BYTE g_pOriginalBytes[5] = { 0, };
 
 
-__declspec(dllexport)void SerProcName(LPCTSTR szProcName)
+__declspec(dllexport)void SetProcName(LPCTSTR szProcName)
 {
 	_tcscpy(g_szProcName, szProcName);
 
